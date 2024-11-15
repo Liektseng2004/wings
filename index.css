@@ -1,0 +1,54 @@
+#loginSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centers vertically within the viewport */
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.formContainer h3 {
+    margin-bottom: 20px;
+    color: white; /* Ensure the text is readable on the dark background */
+}
+
+.formContainer input {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    max-width: 100%; /* Ensures inputs don't exceed container width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Keeps consistent padding */
+}
+
+.formContainer button {
+    padding: 12px;
+    width: 100%;
+    max-width: 100%; /* Ensures button matches input width */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px; /* Adds spacing between the last input and button */
+}
+
+.formContainer button:hover {
+    background-color: #45a049;
+}
+
+.formContainer button:active {
+    background-color: #3e8e41; /* Darker shade for click effect */
+}

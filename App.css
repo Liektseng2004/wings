@@ -1,0 +1,165 @@
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color:azure;
+  ; /* Set background color to Azure */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #333; /* Adjust text color for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+  text-align: center;
+  color:green; /* Bright green */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-size: 3rem; /* Increased size for more impact */
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: 'Lora', serif;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+#navigation {
+  background-color:white ; /* Light background for contrast */
+  width: 100%; /* Full-width navbar */
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+  position: relative;
+}
+
+#navigation ul {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+#navigation ul li button {
+  background-color: #94a592; /* Earthy green */
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#navigation ul li button:hover {
+  background-color: #3e8ec3; /* Bright blue on hover */
+  transform: scale(1.05);
+}
+
+/* Dashboard Container Styles */
+#dashboardContainer {
+  background-color: black; /* Semi-transparent white */
+  width: 90%; /* Increase width to fill most of the screen */
+  max-width: 1200px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  overflow-y: auto;
+}
+
+/* Table and Chart Styles */
+table {
+  width: 100%; /* Full width inside the container */
+  color: black;
+  margin-top: 25px;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.1rem; /* Increase font size */
+}
+
+th {
+  background-color: black;
+  color: rgb(220, 235, 235);
+}
+
+.chart-container {
+  width: 100%; /* Full width of container */
+  max-width: 1000px; /* Limit maximum width */
+  height: 500px; /* Increase height for better visibility */
+  margin-top: 20px;
+}
+
+img {
+  width: 100%; /* Full width of container */
+  max-width: 1000px; /* Limit maximum width */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #dashboardContainer {
+    width: 95%; /* Slightly reduce for small screens */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #navigation ul {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px;
+  }
+}
+/* Centering the login/signup container */
